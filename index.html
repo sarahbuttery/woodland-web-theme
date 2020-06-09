@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home | Woodland</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!--Font Awesome-->
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <!--Custom Styles-->
+    <link rel="stylesheet" href="styles/custom.css">
+</head>
+  
+	<body>
+    	<header class="site-header" role="banner">
+    		<div class="navbar-wrapper">
+            	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        			<div class="container">
+            			<div class="navbar-header">
+                			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+                			</button> 
+                			 <a class="navbar-brand" href="http://disputebills.com"><img src="images/forestrylogo.png" alt="logo">
+                			 </a>                      
+            			</div>
+                		<div class="navbar-collapse collapse">
+							<div class="nav">
+								<ul class="nav navbar-nav navbar-right">
+									<li><a href="index.html">Home</a></li>
+									<li><a href="blog.html">Blog</a></li>
+									<li><a href="hubusers.html">Hub Users</a></li>
+									<li><a href="contact.html">Contact</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+            	</div>
+        	</div>
+    	</header>
+    
+		<div id="myCarousel" class="carousel slide myCarousel_indicators myCarousel_control_button" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="3000">
+			<div class="u-margin-top-large">
+				
+			</div>
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="item active">
+						<div class="myCarousel_slide">
+							<img src="/images/forestry.jpg" alt="forestry">
+						</div>
+					</div>
+					<div class="item">
+						<div class="myCarousel_slide">
+							<img src="/images/squirrel.jpg" alt="squirell">
+						</div>
+					</div>
+					<div class="item">
+						<div class="myCarousel_slide">
+							<img src="/images/flowers.jpg" alt="flowers">
+						</div>
+					</div>
+				</div>
+				<a href="#myCarousel" class="left carousel-control" data-slide="prev">
+					<span class="fa fa-chevron-left"></span>
+				</a>
+				<a href="#myCarousel" class="right carousel-control" data-slide="next">
+					<span class="fa fa-chevron-right"></span>
+				</a>
+			</div>
+        
+        <section>
+         <div class="row">
+            <div class="col-md-8 col-md-offset-2 home-text">
+               <div class="u-margin-top-medium">
+					<h1 class="home-text">Welcome to the Forestry Hub</h1>
+               </div>
+               
+               <div class="u-margin-top-small">
+					<p>Thanks for finding us – now we can say a bit about what the Forestry Hub is, and what you might find here.
+
+					<p>Where are we? – The Forestry Hub is a modern building, built largely of wood, owned by Welsh Government on the Dyfi Eco Parc in Machynlleth. It provides flexible, multi-user office and meeting space, both for long term users and also for one off meetings or events. The building itself is close by the railway station at Machynlleth – so is readily accessible by rail, as well as having shared parking facilities.</p>
+
+					<p>The Forestry Hub is supported by Welsh Government as part of the practical application of the Wellbeing of Future Generations Act – and is run on a practical day to day basis by the organisations that use it.</p>
+
+					<p>Already a series of different events, meetings and workshops – for public sector, private sector and third sector – have been run by organisations and groups , so why not get in touch to see if you can join them or run your own workshop?</p>
+				</div>
+             </div>
+        </div>
+        </section>
+        
+        <div class="gallery-wrapper">
+        	<div class="u-margin-top-large u-margin-bottom-medium">
+        		<h1 class="gallery-title">Gallery</h1>
+        	</div>
+			
+			<div class="row img-padding-small">
+				<div class="col-md-4">
+					<div class="hovereffect">
+						<img class="img-rounded responsive" src="images/img1.jpg">
+						<div class="overlay" onclick="openModal();currentSlide(1)">
+							<h2>Forestry Hub</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="hovereffect">
+						<img class="img-rounded responsive" src="images/img2.JPG">
+						<div class="overlay" onclick="openModal();currentSlide(2)">
+							<h2>Crafts</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="hovereffect">
+						<img class="img-rounded responsive" src="images/img3.jpg">
+						<div class="overlay" onclick="openModal();currentSlide(3)">
+							<h2>Denmark Farm</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row img-padding-small">
+				<div class="col-md-4">
+					<div class="hovereffect">
+						<img class="img-rounded responsive" src="images/img4.jpg">
+						<div class="overlay" onclick="openModal();currentSlide(4)">
+							<h2>Wood Carvings</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="hovereffect">
+						<img class="img-rounded responsive" src="images/img5.jpg">
+						<div class="overlay" onclick="openModal();currentSlide(5)">
+							<h2>Forestry</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="hovereffect">
+						<img class="img-rounded responsive" src="images/img6.jpg">
+						<div class="overlay" onclick="openModal();currentSlide(6)">
+							<h2>Red Squirell</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+           
+        <div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+        		<a class="prev-lightbox" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next-lightbox" onclick="plusSlides(1)">&#10095;</a>
+        	<div class="modal-content">
+				<div class="mySlides">
+					<img class="lightbox-img" src="images/office.jpg">
+					<div class="caption-container">
+						<p id="caption">Forestry Hub</p>
+					</div>
+				</div>
+
+				<div class="mySlides">
+					<img class="lightbox-img" src="images/art.jpg">
+					<div class="caption-container">
+						<p id="caption">Craft</p>
+					</div>
+				</div>
+
+				<div class="mySlides">
+					<img class="lightbox-img" src="images/denmark.jpg">
+					<div class="caption-container">
+						<p id="caption">Denmark Farm</p>
+					</div>   
+				</div>
+
+				<div class="mySlides">
+					<img class="lightbox-img" src="images/carving.jpg">
+					<div class="caption-container">
+						<p id="caption">Wood Carvings</p>
+					</div>
+				</div> 
+            
+				<div class="mySlides">
+					<img class="lightbox-img" src="images/meadow.jpg">
+					<div class="caption-container">
+						<p id="caption">Forestry</p>
+					</div>
+				</div> 
+            
+				<div class="mySlides">
+					<img class="lightbox-img" src="images/red-squirrel.jpg">
+					<div class="caption-container">
+						<p id="caption">Squirrel</p>
+					</div>
+				</div>
+        	</div>
+    	</div>
+     
+    <div class="container services-styles">
+    	<div class="u-margin-top-medium u-margin-bottom-large">
+			<h1>What we offer</h1>
+		</div>
+  		<div class="row">
+			<div class="col-md-4">
+				<span class="glyphicon glyphicon-leaf"></span>
+				<h4>Join Us</h4>
+				<p>Lorem ipsum dolor sit amet..</p>
+			</div>
+			<div class="col-md-4">
+				<span class="glyphicon glyphicon-tree-deciduous"></span>
+				<h4>Our Partners</h4>
+				<p>Lorem ipsum dolor sit amet..</p>
+			</div>
+			<div class="col-md-4">
+				<span class="glyphicon glyphicon-tree-conifer"></span>
+				<h4>Events</h4>
+				<p>Lorem ipsum dolor sit amet..</p>
+			</div>
+    	</div>
+    	<div class="u-margin-bottom-xxlarge">
+    		<div class="row u-margin-top-xlarge">
+    			<div class="col-md-4">
+					<span class="far fa-calendar-check"></span>
+					<h4>Conferences</h4>
+					<p>Lorem ipsum dolor sit amet..</p>
+    			</div>
+    			<div class="col-md-4">
+					<span class="fas fa-map-signs"></span>
+					<h4>Find Us</h4>
+   					<p>Lorem ipsum dolor sit amet..</p>
+    			</div>
+    			<div class="col-md-4">
+					<span class="glyphicon glyphicon-envelope"></span>
+					<h4>Contact</h4>
+   					<p>Lorem ipsum dolor sit amet..</p>
+    			</div>
+    		</div>
+		</div>
+	</div>
+   	
+	<div class='scrolltop'>
+		<div class='scroll icon'><i class="fa fa-4x fa-angle-up"></i>
+		</div>
+	</div>
+   
+	<footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2">
+                    <h6>Sarah Buttery &copy; 2017</h6>
+                </div>
+                
+			 	<div class="col-sm-4">
+                    <h6>About Us</h6>
+                    <p>Doctrina e aute, a lorem doctrina. Consequat sed summis probant, et veniam 
+                        quamquam iudicem.</p>
+				</div>
+                <div class="col-sm-2">
+                    <h6>Navigation</h6>
+                    <ul class="unstyled">
+                        <li><a href="#">Home</a> 
+                        <li><a href="#">Services</a>
+                        <li><a href="#">Links</a> 
+                        <li><a href="#">Contact</a>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                	<h6>Follow Us</h6>
+                    <ul class="unstyled">
+                        <li><a href="#">Twitter</a> 
+                        <li><a href="#">Facebook</a>
+                        <li><a href="#">Google Plus</a> 
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+					<h6>Coded with <span class="glyphicon glyphicon-heart"></span> By</h6><span class="u-margin-top-small advert-heading">
+					<a href="https://sarahwebsitedesign.co.uk">sarahwebsitedesign.co.uk</a></span>
+                </div>               
+    		</div>
+		</div>
+    </footer>
+    
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+   </body>
+</html>
